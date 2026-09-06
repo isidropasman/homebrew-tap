@@ -7,7 +7,7 @@ cask "mactools" do
   desc "Portapapeles, tareas, agenda y sesiones de agentes colgados de la notch"
   homepage "https://github.com/isidropasman/homebrew-tap"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "MacTools.app"
 
