@@ -14,8 +14,12 @@ cask "mactools" do
   # MacTools no esta notarizada: sin esto macOS la bloquea al abrirla y hay que ir a
   # Ajustes > Privacidad y Seguridad > "Abrir igualmente". Es lo mismo que harias a mano,
   # hecho por el instalador. Cuando la app este notarizada esto se borra.
-  postflight_steps do
-    system "/usr/bin/xattr", "-dr", "com.apple.quarantine", "/Applications/MacTools.app"
+  # postflight_steps es un DSL restringido que no deja correr comandos, asi que sigue siendo
+  # postflight aunque avise que esta deprecado.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MacTools.app"],
+                   sudo: false
   end
 
   uninstall quit: "dev.isidropasman.pila"
