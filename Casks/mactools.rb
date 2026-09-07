@@ -16,7 +16,7 @@ cask "mactools" do
   # hecho por el instalador. Cuando la app este notarizada esto se borra.
   postflight_steps do
     system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MacTools.app"],
+                   args: ["-dr", "com.apple.quarantine", "/Applications/MacTools.app"],
                    sudo: false
   end
 
