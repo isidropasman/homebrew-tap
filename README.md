@@ -1,4 +1,4 @@
-# MacTools
+# Notchbox
 
 Portapapeles con historial, tareas, agenda, estante de archivos y el estado de tus
 sesiones de Claude, Codex y Conductor — todo colgado de la notch.
@@ -6,7 +6,7 @@ sesiones de Claude, Codex y Conductor — todo colgado de la notch.
 ## Instalar
 
 ```sh
-brew install --cask isidropasman/tap/mactools
+brew install --cask isidropasman/tap/notchbox
 ```
 
 Eso es todo: instala y abre sin advertencias. Si no tenés Homebrew, primero:
@@ -19,7 +19,7 @@ Requiere **macOS 14 (Sonoma) o más nuevo**.
 
 ## La primera vez
 
-MacTools vive en la barra de menú, no en el Dock. Al abrirla aparece una **guía de
+Notchbox vive en la barra de menú, no en el Dock. Al abrirla aparece una **guía de
 inicio** que pide los permisos de a uno, con un botón cada uno:
 
 | Permiso | Para qué | ¿Obligatorio? |
@@ -51,7 +51,7 @@ instala aparte:
 brew install --cask fluidvoice
 ```
 
-MacTools lo detecta, lo configura desde **Configuración → Dictado** y guarda cada
+Notchbox lo detecta, lo configura desde **Configuración → Dictado** y guarda cada
 dictado en el historial del portapapeles.
 
 ### Agentes (opcional)
@@ -77,14 +77,14 @@ brew uninstall --zap --cask mactools    # y también el historial y las preferen
 
 Bajá el `.dmg` de [Releases](https://github.com/isidropasman/homebrew-tap/releases).
 
-MacTools no está notarizada con una cuenta de Apple Developer, así que por este
+Notchbox no está notarizada con una cuenta de Apple Developer, así que por este
 camino macOS la bloquea la primera vez con *"Apple no ha podido verificar que no
 contenga software malicioso"*. Para abrirla igual:
 
-1. Arrastrá MacTools a **Aplicaciones**.
+1. Arrastrá Notchbox a **Aplicaciones**.
 2. Abrila. Cuando salga el cartel, apretá **Aceptar**.
 3. Andá a **Ajustes del Sistema → Privacidad y Seguridad**, bajá hasta *Seguridad*
-   y apretá **Abrir igualmente** al lado de MacTools.
+   y apretá **Abrir igualmente** al lado de Notchbox.
 4. Confirmá con **Abrir**.
 
 Solo la primera vez. Desde macOS 15 el viejo truco del clic derecho ya no alcanza.
