@@ -1,6 +1,6 @@
 cask "mactools" do
-  version "0.1.1"
-  sha256 "74e1382199e2099abd5f674acc8bcef874dd4b1c77441c91f3ca75836ffa0154"
+  version "0.1.2"
+  sha256 "1ff872b5151df1a04d9bdc6b3025262e6c7020c73d01f7968108658dae8c3ad7"
 
   url "https://github.com/isidropasman/homebrew-tap/releases/download/v#{version}/MacTools-#{version}.dmg"
   name "MacTools"
