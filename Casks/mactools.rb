@@ -15,9 +15,7 @@ cask "mactools" do
   # Ajustes > Privacidad y Seguridad > "Abrir igualmente". Es lo mismo que harias a mano,
   # hecho por el instalador. Cuando la app este notarizada esto se borra.
   postflight_steps do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "/Applications/MacTools.app"],
-                   sudo: false
+    system "/usr/bin/xattr", "-dr", "com.apple.quarantine", "/Applications/MacTools.app"
   end
 
   uninstall quit: "dev.isidropasman.pila"
